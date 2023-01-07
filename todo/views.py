@@ -110,6 +110,6 @@ def contactus(request):
             newtodo = form.save(commit=False)
             newtodo.user = request.user
             newtodo.save()
-            return redirect('contactus')
+            return redirect('home')
         except ValueError:
             return render(request, 'todo/contactus.html', {'form':ContactForm(), 'error':'Bad data passed in. Try again.'})
