@@ -11,7 +11,7 @@ from django.utils import timezone
 from django.contrib.auth.decorators import login_required
 
 def home(request):
-    return render(request, 'todo/home.html')
+    return render(request, 'todo/index.html')
 
 def userhome(request):
     return render(request, 'todo/userhome.html')
